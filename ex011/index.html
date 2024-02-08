@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p> Tente abrir essa site em varios dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/amarelo.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/vermelho.png" type="image/png">
+        <img src="imagens/verde.png" alt="imagem Flexivel">
+    </picture>
+    <h1>reproducao audio</h1>
+        <p> vamos apresnder a reproduzir audio em html5.</p>
+        <audio preload="metadata" autoplay control loop></audio>
+        <!-- mp3 wav ogg trs formatos que aceitao no audio-->
+        <source src="media/thousand year.mp3" type="image/mp3">
+        <source src="media/thousand year.mp3" type="image/ogg">
+        <source src="media/thousand year.mp3" type="image/wav">
+        <p> Infelizmente seu navegador nao consegue reproduzir audio. <a href="media/thousand year.mp3">Click aqui para baixar o aqurivo mp3</a> </p>
+        
+   
+</html>
