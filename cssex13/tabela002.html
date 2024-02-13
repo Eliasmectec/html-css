@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            background-color: rgba(211, 211, 211, 0.295);
+            box-shadow:2px 2px 10px rgba(0, 0, 0, 0.404);
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(100, 98, 98);
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead,tfoot{
+            background-color: rgb(100, 99, 99);
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+        th.total{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes </h1>
+    <!-- 
+        Anatomia d para tabelas grandes
+        table
+            Caption
+            thead
+                pode ter: tr , td, th
+            tbody
+                pode ter tr: , td, th
+            tfoot
+                pode ter tr: , td, th
+    -->
+    <table>
+        <caption>Populacao das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width:5px">Posicao</th>
+                <th scope="col" style="text-align: left;">Estado</th>
+                <th scope="col" style="width:50px">Populacao</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sao Paulo <img src="/cssex13/imagem/sao paulo.png" alt=""></td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais <img src="/cssex13/imagem/minas gerais.png" alt=""></td>
+                <td class="num">21.168.791 </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro <img src="/cssex13/imagem/rio de janeiro.png" alt=""></td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia <img src="/cssex13/imagem/bahia.png" alt=""></td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Parana <img src="/cssex13/imagem/parana.png" alt=""></td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul <img src="/cssex13/imagem/rio grande do sul.png" alt=""></td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pernambuco <img src="/cssex13/imagem/pernambuco.png" alt=""></td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Ceara <img src="/cssex13/imagem/ceara.png" alt=""></td>
+                <td class="num">9.132.087</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Para <img src="/cssex13/imagem/para.png" alt=""></td>
+                <td class="num">8.620.865</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Santa Catarina <img src="/cssex13/imagem/santa catarina.png" alt=""></td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Maranhao <img src="/cssex13/imagem/maranhao.png" alt=""></td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Goias <img src="/cssex13/imagem/goias.png" alt=""></td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Amazonas <img src="/cssex13/imagem/amazonas.png" alt=""></td>
+                <td class="num">4.114.354</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Espirito Santo <img src="/cssex13/imagem/espirito santo.png" alt=""></td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Paraiba <img src="/cssex13/imagem/paraiba.png" alt=""></td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Rio Grande do Norte <img src="/cssex13/imagem/rio grande do norte.png" alt=""></td>
+                <td class="num">3.505.853</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Mato Grosso <img src="/cssex13/imagem/mato grosso.png" alt=""></td>
+                <td class="num">3.484.466</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Alagoas <img src="/cssex13/imagem/alagoas.png" alt=""></td>
+                <td class="num">3.337.357</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Piaui <img src="/cssex13/imagem/piaui.png" alt=""></td>
+                <td class="num">3.273.227</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Distrito Federal <img src="/cssex13/imagem/distrito federal.png" alt=""></td>
+                <td class="num">3.015.268</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Mato Grosso do Sul <img src="/cssex13/imagem/mato grosso do sul.png" alt=""></td>
+                <td class="num">2.778.986</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sergipe <img src="/cssex13/imagem/sergipe.png" alt=""></td>
+                <td class="num">2.298.296</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Rondonia <img src="/cssex13/imagem/rondonia.png" alt=""></td>
+                <td class="num">1.777.225</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Tocantins <img src="/cssex13/imagem/tocantins.png" alt=""></td>
+                <td class="num">1.572.866</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Acre <img src="/cssex13/imagem/acre.png" alt=""></td>
+                <td class="num">881.935</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Amapa <img src="/cssex13/imagem/amapa.png" alt=""></td>
+                <td class="num">845.731</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Roraima <img src="/cssex13/imagem/roraima.png" alt=""></td>
+                <td class="num">605.761</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <th scope="row" class="total"><strong>Total de Habitantes</strong> </th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
