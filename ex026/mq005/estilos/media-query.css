@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+/*Todas as demais midias */
+
+/* Tipcal device breakpoints
+pequenas tela: ate 600px
+celular: de 600px ate 768px
+tablet: 758px ate 992px
+desktop: 992PX ATE 1200PX 
+gandes telas: acima de 1200px */
+
+
+@media screen and (min-width: 768px){
+    span#burger{display:none;}
+
+menu{
+    display: block;
+}
+menu > ul > li{ 
+    display: inline-block
+}
+main{ 
+    width: 768px;
+}
+}
